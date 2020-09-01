@@ -118,10 +118,10 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 	To keep track of version history, allow for smooth collaborations, and save previous version data in the event of a necessary rollback.
 
     35. How often should I commit to github?
-	Often. At the very least every few days, but probably more like twice a day when working.
+	Often. ~ every 20 minutes.
 
     36. What is the command we would use to push our repo up to github?
-	git push -u
+	git push
 
     37. Walk me through Lambda's git flow. 
 	
