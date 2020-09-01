@@ -22,13 +22,13 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 	<a> and <img>
 
     6. What do we put in the head of our HTML document?  
-	Meta data.
+	Metadata.
 
     7. What is an id?  
 	A single-use, specific reference to a particular element on the page.
 
-    8. What elements can I add an id to? 
-	<div> (and all other semantic HTML equivalents), <img>,<a>
+    8. What elements can I add an id to?
+	Almost all of them, but it won't actually affect a couple metadata tags such as <HTML>, as well as <script> tags.
 
     9. How many times can I use the same id on a page? 
 	Once.
@@ -37,7 +37,7 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 	A specific reference to as many elements on the page as needed.
 
     11. What elements can I add a class to? 
-	<div> (and all other semantic HTML equivalents), <img>,<a>
+	All of them, except metadata such as <HTML> and then things like <script> tags.
 
     12. How many times can I use the same class on a page? 
 	As many times as needed.
@@ -58,11 +58,10 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 	Styling the information on the page.
 
     18. How to we select an element? Example - every h2 on the page: 
-	h2 {
-	}
+	By its name: i.e. h2
 
     19. What is the difference between a class and an id? - Give me an example of when I might use each one:
-	Classes can be defined as a descriptor to style targeted elements. Id's are extremely specific and can also be referenced by the HTML as an in-page link.
+	Classes can be defined as a descriptor of targeted elements and can be used infinitely. Ids are extremely specific to one single element and can also be referenced by the HTML as an in-page link.
 	I would use class="schools" if I wanted to assign everything on the page with a class of "schools" to have a background color of grey.
 	I would use id="schools" if I wanted the user to be able to navigate directly to a list of schools from elsewhere on the page and/or to set a different set of CSS rules for this one specific element.
 
@@ -73,13 +72,13 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 	p.human
 
     22. What is a parent child selector? When would this be useful?
-	
+    This selects all elements that are directly inside of the parent element. This would be useful if you wanted to style any <h3> tags that exist only in the <footer> container.
 
     23. How do you select all links within a div with the class of sidebar?
-	div a
+	.sidebar a 
 
     24. What is a pseudo selector?
-	Specialty classes inside of CSS such as :hover.
+	Specialty selectors inside of CSS such as :hover, used for when you don't have all the information but still need to affect styling.
 
 
     25. What do we use the change the spacing between lines? 
@@ -111,7 +110,7 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 	ls
 
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
-	rm filename.extension to remove a particular file. rm -r directoryname to delete all files inside of a directory and then the directory itself. Care should be taken as there are no prompts and data could be lost accidently.
+	rm filename.extension to remove a particular file. rm -r directoryname to delete all files inside of a directory and then the directory itself. Care should be taken as there are no prompts and data will be unrecoverable.
 
 
     34. Why should I use version control?
@@ -123,7 +122,13 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     36. What is the command we would use to push our repo up to github?
 	git push
 
-    37. Walk me through Lambda's git flow. 
+    37. Walk me through Lambda's git flow.
+    Fork &  Add TL collaborator
+    Clone
+    Create branch firstname-lastname
+    Work on project
+    Push to Github and set origin branch
+    Make pull request
 	
 
 
@@ -142,6 +147,6 @@ Stretch Questions
 	<div><p>and <ul> are block by default. <span> and <a> are inline by default. <button> is an inline-block element.
 
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
-	
+    Evertything is placed inside box containers, which can then be manipulated by content, layout, and design. Display: inline-block or Display: flex will force content to respect width -- moving into Display: grid in the future.
    --> 
 
