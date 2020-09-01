@@ -1,0 +1,152 @@
+link to finished codepen: https://codepen.io/Sonyei/pen/MWyvMxo?editors=1100
+
+
+
+<!-- Questions to Submit in today's file first-lastname.txt --> 
+<!--
+Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+	Specific HTML tags that are readable and a map of the flow for yourself and any future developer to look at the code. i.e. <footer>  inside of a <div> instead of a <div> inside of a <div>.
+
+    2. What is HTML used for?  
+	To structure information inside of a browser.
+
+    3. What is an attribute and where do we put it? 
+	Attributes define specific information about a tag. i.e. the HREF attribute of an <a>.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+	h1 defines the title, and should only be used once.
+
+    5. Name two tags that have required attributes: 
+	<a> and <img>
+
+    6. What do we put in the head of our HTML document?  
+	Metadata.
+
+    7. What is an id?  
+	A single-use, specific reference to a particular element on the page.
+
+    8. What elements can I add an id to?
+	Almost all of them, but it won't actually affect a couple metadata tags such as <HTML>, as well as <script> tags.
+
+    9. How many times can I use the same id on a page? 
+	Once.
+
+    10. What is a class? 
+	A specific reference to as many elements on the page as needed.
+
+    11. What elements can I add a class to? 
+	All of them, except metadata such as <HTML> and then things like <script> tags.
+
+    12. How many times can I use the same class on a page? 
+	As many times as needed.
+
+    13. How do I get my link to open in a new tab? 
+	_blank
+
+    14. What is the alt attribute in the image tag used for? 
+	Accessibility. 
+
+    15. How do I reference an id? 
+	#
+
+    16. What is the difference between a section and a div? 
+	<section> is semantic, <div> is generic.
+
+    17. What is CSS used for?  
+	Styling the information on the page.
+
+    18. How to we select an element? Example - every h2 on the page: 
+	By its name: i.e. h2
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one:
+	Classes can be defined as a descriptor of targeted elements and can be used infinitely. Ids are extremely specific to one single element and can also be referenced by the HTML as an in-page link.
+	I would use class="schools" if I wanted to assign everything on the page with a class of "schools" to have a background color of grey.
+	I would use id="schools" if I wanted the user to be able to navigate directly to a list of schools from elsewhere on the page and/or to set a different set of CSS rules for this one specific element.
+
+    20. How do we select classes in CSS? 
+	with a . before the name i.e. ".classes"
+
+    21. How do we select a p element with a single class of “human””? 
+	p.human
+
+    22. What is a parent child selector? When would this be useful?
+    This selects all elements that are directly inside of the parent element. This would be useful if you wanted to style any <h3> tags that exist only in the <footer> container.
+
+    23. How do you select all links within a div with the class of sidebar?
+	.sidebar a 
+
+    24. What is a pseudo selector?
+	Specialty selectors inside of CSS such as :hover, used for when you don't have all the information but still need to affect styling.
+
+
+    25. What do we use the change the spacing between lines? 
+	line-height:
+
+    26. What do we use to change the spacing between letters? 
+	letter-spacing:
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	text-transform: uppercase
+	text-transform: lowercase
+	text-transform: capitalize 
+
+    28. How do I add a 1px border around my div that is dotted and black?
+	div {
+	border: black dotted 1px;
+	}
+
+    29. How do I select everything on the page? 
+	with the * selector
+
+    30. How do I write a comment in CSS?
+	/*comments go here*/
+
+    31. How do I find out what file I am in, when I am using the command line?  
+	pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+	ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	rm filename.extension to remove a particular file. rm -r directoryname to delete all files inside of a directory and then the directory itself. Care should be taken as there are no prompts and data will be unrecoverable.
+
+
+    34. Why should I use version control?
+	To keep track of version history, allow for smooth collaborations, and save previous version data in the event of a necessary rollback.
+
+    35. How often should I commit to github?
+	Often. ~ every 20 minutes.
+
+    36. What is the command we would use to push our repo up to github?
+	git push
+
+    37. Walk me through Lambda's git flow.
+    Fork &  Add TL collaborator
+    Clone
+    Create branch firstname-lastname
+    Work on project
+    Push to Github and set origin branch
+    Make pull request
+	
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+	Block elements take up the entire width, inline elements take up only as much space as they need.
+
+    2. What happens when an element is positioned absolutely?
+	The element no longer exists in the same space as the other elements, it exists on its own layer and no longer respects the boundaries of other elements in the normal layout.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+	Inline-block or inline-flex
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	<div><p>and <ul> are block by default. <span> and <a> are inline by default. <button> is an inline-block element.
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    Evertything is placed inside box containers, which can then be manipulated by content, layout, and design. Display: inline-block or Display: flex will force content to respect width -- moving into Display: grid in the future.
+   --> 
+
